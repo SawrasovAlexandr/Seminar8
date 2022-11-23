@@ -27,12 +27,13 @@ void Print2DArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{array[i, j],3}");
+            Console.Write($"{array[i, j],4}");
         }
         Console.WriteLine();
     }
 }
 
+//Сортирует строку с указанным индексом двумерного массива по убыванию
 void SortRow2DArray(int[,] array, int row)
 {
     int temp = 0;
@@ -53,7 +54,7 @@ void SortRow2DArray(int[,] array, int row)
     }
 }
 
-int[,] arr = GetRandom2DArray(10, 25, 0, 99);
+int[,] arr = GetRandom2DArray(10, 25, -99, 99);
 Print2DArray(arr);
 for (int i = 0; i < arr.GetLength(0); i++)
 {
