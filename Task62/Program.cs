@@ -53,7 +53,7 @@ void Print2DArray (int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{array[i,j].ToString().PadLeft(2, '0'),4}");
+            Console.Write($"{array[i,j].ToString().PadLeft(2, '0'),3}");
         }
         Console.WriteLine();
     }
